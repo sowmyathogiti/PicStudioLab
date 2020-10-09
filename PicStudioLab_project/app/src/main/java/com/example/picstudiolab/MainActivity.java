@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openLogin() {
-        Intent loginIntent = new Intent(this, FrameSetup.class);
+        Intent loginIntent = new Intent(this, Home.class);
         startActivity(loginIntent);
     }
 

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">PicStudioLab</string>
     <string name="title_activity_home">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="Service">service</string>
-    <string name="Profile">profile</string>
+    <string name="title_home"><B>Home</B></string>
+<!--    <string name="title_dashboard">Dashboard</string>-->
+<!--    <string name="title_notifications">Notifications</string>-->
+    <string name="Service"><B>Services</B></string>
+    <string name="Profile"><B>Profile</B></string>
 </resources>
