@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Wedding">
 
+<<<<<<< HEAD
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add6"
         android:layout_width="wrap_content"
@@ -112,4 +113,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.901" />
 
+=======
+>>>>>>> dc6019d76b0090b9a2b46410f3340832f6b929f5
 </androidx.constraintlayout.widget.ConstraintLayout>
