@@ -59,7 +59,7 @@
             android:layout_width="353dp"
             android:layout_height="53dp"
             android:background="#009688"
-            android:text="Regular  Frames"
+            android:text="Invitation  Frames"
             android:textAlignment="center"
             android:textColor="#FDFDFD"
             android:textStyle="bold"
