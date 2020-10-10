@@ -40,4 +40,7 @@ public class ResetPassword extends AppCompatActivity {
         Intent back = new Intent(this, MainActivity.class);
         startActivity(back);
     }
+
+    public static class dashboardFragment {
+    }
 }

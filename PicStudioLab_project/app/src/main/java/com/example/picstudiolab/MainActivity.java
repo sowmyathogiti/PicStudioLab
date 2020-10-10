@@ -1,17 +1,19 @@
 package com.example.picstudiolab;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+
 public class MainActivity extends AppCompatActivity {
 
-
+    Button framebtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button google = findViewById(R.id.google);
         TextView help = findViewById(R.id.help);
         Button login = findViewById(R.id.Login);
-
+        framebtn = findViewById(R.id.framebtn);
         help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(googleIntent);
             }
         });
+    }
+
+    private void frame1() {
+        Intent frame1Intent = new Intent(this, Home.class);
+        startActivity(frame1Intent);
     }
 
     private void openLogin() {
