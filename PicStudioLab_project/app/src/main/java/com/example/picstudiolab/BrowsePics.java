@@ -68,4 +68,13 @@ public class BrowsePics extends AppCompatActivity {
                 break;
         }
     }
+
+    public static class PlacedOrder extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_placed_order);
+        }
+    }
 }

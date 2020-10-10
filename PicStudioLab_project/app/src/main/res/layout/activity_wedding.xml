@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Wedding">
 
-<<<<<<< HEAD
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add6"
         android:layout_width="wrap_content"
@@ -113,6 +113,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.901" />
 
-=======
->>>>>>> dc6019d76b0090b9a2b46410f3340832f6b929f5
+    <Button
+        android:id="@+id/attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="Get PDF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

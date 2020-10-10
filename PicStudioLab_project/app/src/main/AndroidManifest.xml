@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.picstudiolab">
 
+    <uses-permission android:name="android.permisssion.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Wedding"></activity>
+        <activity android:name=".Map"></activity>
+        <activity android:name=".BrowsePics$PlacedOrder" />
+        <activity android:name=".Wedding" />
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home" />
@@ -17,9 +22,12 @@
         <activity android:name=".BrowsePics" />
         <activity android:name=".FrameSetup" />
         <activity android:name=".SentReset" />
+        <activity android:name=".ConfirmationPage" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".Account" />
         <activity android:name=".MainActivity">
+            <meta-data android:name="com.google.android.geo.API_KEY"
+                android:value="@string/map_key"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

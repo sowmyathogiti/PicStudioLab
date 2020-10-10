@@ -15,6 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.picstudiolab.BrowsePics;
+import com.example.picstudiolab.Map;
 import com.example.picstudiolab.R;
 import com.example.picstudiolab.Wedding;
 
@@ -32,7 +33,7 @@ public class HomeFragment extends Fragment {
         locationbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cartInt = new Intent(getActivity(), BrowsePics.class);
+                Intent cartInt = new Intent(getActivity(), Map.class);
                 startActivity(cartInt);
             }
         });

@@ -15,7 +15,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.picstudiolab.BrowsePics;
+import com.example.picstudiolab.FrameSetup;
 import com.example.picstudiolab.Home;
+import com.example.picstudiolab.Invitation;
 import com.example.picstudiolab.Payment;
 import com.example.picstudiolab.R;
 import com.example.picstudiolab.Wedding;
@@ -37,7 +39,7 @@ public class DashboardFragment extends Fragment {
         regularFrames.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent frame1Intent = new Intent(getActivity(), Wedding.class);
+                Intent frame1Intent = new Intent(getActivity(), FrameSetup.class);
                 startActivity(frame1Intent);
             }
         });
@@ -45,7 +47,7 @@ public class DashboardFragment extends Fragment {
         weddingFrames.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent frame2Intent = new Intent(getActivity(), BrowsePics.class);
+                Intent frame2Intent = new Intent(getActivity(), Wedding.class);
                 startActivity(frame2Intent);
             }
         });
@@ -53,7 +55,7 @@ public class DashboardFragment extends Fragment {
         invitationFrames.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent frame3Intent = new Intent(getActivity(), Payment.class);
+                Intent frame3Intent = new Intent(getActivity(), Invitation.class);
                 startActivity(frame3Intent);
             }
         });
