@@ -27,9 +27,9 @@ public class HomeFragment extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-        Button CartBtn = root.findViewById(R.id.cartbtn);
+        Button locationbtn = root.findViewById(R.id.location);
 
-        CartBtn.setOnClickListener(new View.OnClickListener() {
+        locationbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent cartInt = new Intent(getActivity(), BrowsePics.class);
