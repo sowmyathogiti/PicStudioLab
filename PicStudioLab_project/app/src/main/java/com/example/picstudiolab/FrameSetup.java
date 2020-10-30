@@ -24,7 +24,7 @@ public class FrameSetup extends AppCompatActivity {
         FloatingActionButton add2 = findViewById(R.id.add2);
         FloatingActionButton add3 = findViewById(R.id.add3);
         FloatingActionButton add9 = findViewById(R.id.add9);
-        final TextView addvalue1 = (TextView) findViewById(R.id.addvalue1);
+        final TextView addvalue1 = findViewById(R.id.addvalue1);
         final TextView addvalue2 = findViewById(R.id.addvalue2);
         final TextView addvalue3 = findViewById(R.id.addvalue3);
         final TextView addvalue9 = findViewById(R.id.addvalue9);
