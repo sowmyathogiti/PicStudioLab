@@ -12,6 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
         <activity android:name=".Map"/>
         <activity android:name=".BrowsePics$PlacedOrder" />
         <activity android:name=".Wedding" />
@@ -23,13 +25,13 @@
         <activity android:name=".BrowsePics" />
         <activity android:name=".FrameSetup" />
         <activity android:name=".SentReset" />
+        <activity android:name=".Map"/>
         <activity android:name=".ConfirmationPage" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".Account" />
 
         <activity android:name=".MainActivity">
-            <meta-data android:name="com.google.android.geo.API_KEY"
-                android:value="@string/map_key"/>
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
