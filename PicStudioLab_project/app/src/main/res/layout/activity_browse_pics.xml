@@ -6,33 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".BrowsePics">
 
-    <Button
-        android:id="@+id/browse2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#3F51B5"
-        android:text="BROWSE"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379" />
-
-    <TextView
-        android:id="@+id/frame1text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Frame 3"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293" />
-
     <TextView
         android:id="@+id/browsemsg"
         android:layout_width="wrap_content"
@@ -51,7 +24,7 @@
         android:id="@+id/frame1text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Frame 1"
+        android:text="Frames"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,20 +47,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.191" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addbrowse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
     <Button
         android:id="@+id/checkout"
         android:layout_width="377dp"
@@ -101,4 +60,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.948" />
+
+    <TextView
+        android:id="@+id/fileNames"
+        android:layout_width="388dp"
+        android:layout_height="200dp"
+        android:hint="Review your file here!"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
 </androidx.constraintlayout.widget.ConstraintLayout>

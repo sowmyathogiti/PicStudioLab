@@ -7,10 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class BrowsePics extends AppCompatActivity {
 
     Intent browseIntent;
+    String pathFile= "";
+    TextView fileNames;
 //    public static final int REQUEST_CODE = 10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +21,9 @@ public class BrowsePics extends AppCompatActivity {
         setContentView(R.layout.activity_browse_pics);
 
         Button browse1 =findViewById(R.id.browse1);
-        Button browse2 =findViewById(R.id.browse2);
+//        Button browse2 =findViewById(R.id.browse2);
         Button checkout =findViewById(R.id.checkout);
+        fileNames = findViewById(R.id.fileNames);
         browse1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,15 +32,15 @@ public class BrowsePics extends AppCompatActivity {
                 startActivityForResult(browseIntent,10);
             }
         });
-
-        browse2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                browseIntent = new Intent(Intent.ACTION_GET_CONTENT);
-                browseIntent.setType("*/*");
-                startActivityForResult(browseIntent,20);
-            }
-        });
+//
+//        browse2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                browseIntent = new Intent(Intent.ACTION_GET_CONTENT);
+//                browseIntent.setType("*/*");
+//                startActivityForResult(browseIntent,20);
+//            }
+//        });
 
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,15 +61,13 @@ public class BrowsePics extends AppCompatActivity {
 //        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case 10:
-                if (requestCode == RESULT_OK) {
-                    String path = data.getData().getPath();
+                if (resultCode == RESULT_OK) {
+                    String path = data.getData().getPath().toString();
+                    pathFile = pathFile.concat(path)+"\n";
+                    fileNames.setText(pathFile);
                 }
                 break;
-            case 20:
-                if (requestCode == RESULT_OK) {
-                    String path = data.getData().getPath();
-                }
-                break;
+
         }
     }
 
