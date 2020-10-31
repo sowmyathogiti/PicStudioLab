@@ -25,7 +25,8 @@
         <activity android:name=".BrowsePics" />
         <activity android:name=".FrameSetup" />
         <activity android:name=".SentReset" />
-        <activity android:name=".Map"/>
+        <activity android:name=".ZoomInvitation"/>
+
         <activity android:name=".ConfirmationPage" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".Account" />

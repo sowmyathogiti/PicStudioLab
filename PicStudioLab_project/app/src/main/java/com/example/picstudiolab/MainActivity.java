@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     Button framebtn;
+    EditText UserName,Password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,19 @@ public class MainActivity extends AppCompatActivity {
         TextView help = findViewById(R.id.help);
         Button login = findViewById(R.id.Login);
         framebtn = findViewById(R.id.framebtn);
+        UserName = findViewById(R.id.UserName);
+        Password = findViewById(R.id.Password);
+
+        if(UserName.getText().toString().length()==0)
+            UserName.setError( "Email Id is required!" );
+        else
+            createLogin();
+
+        if(Password.getText().toString().length()==0)
+            Password.setError( "Password Id is required!" );
+        else
+            createLogin();
+
         help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(googleIntent);
             }
         });
+    }
+
+    private void createLogin() {
+        Intent main = new Intent(this,MainActivity.class);
+        startActivity(main);
     }
 
     private void frame1() {
