@@ -10,7 +10,7 @@
         android:id="@+id/initialmsg"
         android:layout_width="354dp"
         android:layout_height="31dp"
-        android:text="Hello Mr. XYZ, welcome home"
+        android:text="Hello Miss. Sowmya, welcome home"
         android:textColor="#009688"
         android:textSize="20dp"
         android:textStyle="bold"
