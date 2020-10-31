@@ -66,6 +66,7 @@
         android:layout_width="388dp"
         android:layout_height="200dp"
         android:hint="Review your file here!"
+        android:textColor="#FA9706"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
