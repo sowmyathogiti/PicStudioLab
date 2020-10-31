@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:editable="true"
-        android:text="San Anderson"
+        android:text="Sowmya Thogiti"
         android:textColor="#100F0F"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:editable="true"
-        android:text="san.anderson@gmail.com"
+        android:text="sowmyathogiti27@gmail.com"
         android:textColor="#131313"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
         android:id="@+id/gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MALE"
+        android:text="FEMALE"
         android:textColor="#232222"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:editable="true"
-        android:text="48 years"
+        android:text="26 years"
         android:textColor="#252323"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -126,7 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:editable="true"
-        android:text="84 KGS"
+        android:text="60 KGS"
         android:textColor="#131212"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -141,7 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:editable="true"
-        android:text="5'11"
+        android:text="5'0"
         android:textColor="#151414"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -171,7 +171,7 @@
         android:layout_height="wrap_content"
         android:background="#0B9711"
         android:editable="true"
-        android:text="(000) 000 0000"
+        android:text="(660)-853-8360"
         android:textColor="#EDF1ED"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -199,15 +199,15 @@
         android:id="@+id/st"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1121 N College Drive"
+        android:text="1121 N College Drive, Apt 84"
         android:textColor="#918C8C"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691" />
+        app:layout_constraintVertical_bias="0.681" />
 
     <TextView
         android:id="@+id/state"
@@ -218,10 +218,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.712" />
 
     <TextView
         android:id="@+id/MOtext"
@@ -235,7 +235,7 @@
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintVertical_bias="0.743" />
 
     <ImageView
         android:id="@+id/imageView"
