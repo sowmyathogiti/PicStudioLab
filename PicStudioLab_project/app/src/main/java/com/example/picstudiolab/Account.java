@@ -26,7 +26,7 @@ public class Account extends AppCompatActivity {
                 if(firstnamevalue.getText().toString().length()==0)
                     firstnamevalue.setError( "First name is required!" );
                 else
-                createAccount();
+                    createAccount();
 
                 EditText lastnamevalue = findViewById(R.id.lastnamevalue);
                 if(lastnamevalue.getText().toString().length()==0)
