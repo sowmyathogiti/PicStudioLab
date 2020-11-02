@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "528001729598",
+    "firebase_url": "https://picstudiolab-c0ed1.firebaseio.com",
+    "project_id": "picstudiolab-c0ed1",
+    "storage_bucket": "picstudiolab-c0ed1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528001729598:android:0145b8353a03e987493d6f",
+        "android_client_info": {
+          "package_name": "com.example.picstudiolab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528001729598-3i825bg3f509clma8hvk83n24mucvnp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYHPJLHQyd9f3gOv6UG5ZwyP-bLZ6Ps9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528001729598-3i825bg3f509clma8hvk83n24mucvnp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
