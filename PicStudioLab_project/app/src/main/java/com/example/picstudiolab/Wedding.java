@@ -13,7 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Wedding extends AppCompatActivity {
     Button add;
-    Button attach;
+//    Button attach;
 
     int count4,count5,count6;
     @Override
@@ -29,22 +29,22 @@ public class Wedding extends AppCompatActivity {
         final TextView addvalue5 = findViewById(R.id.addvalue5);
         final TextView addvalue6 = findViewById(R.id.addvalue6);
 
-       add= findViewById(R.id.add);
-       attach = findViewById(R.id.attach);
-       add.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               Intent intadd = new Intent(getApplicationContext(), BrowsePics.class);
-               startActivity(intadd);
-           }
-       });
-       attach.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               Intent intattach = new Intent(getApplicationContext(), ConfirmationPage.class);
-               startActivity(intattach);
-           }
-       });
+        add= findViewById(R.id.addWed);
+//        attach = findViewById(R.id.attach);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intadd = new Intent(getApplicationContext(), BrowsePics.class);
+                startActivity(intadd);
+            }
+        });
+//        attach.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intattach = new Intent(getApplicationContext(), ConfirmationPage.class);
+//                startActivity(intattach);
+//            }
+//        });
 
         add4.setOnClickListener(new View.OnClickListener() {
             @Override
