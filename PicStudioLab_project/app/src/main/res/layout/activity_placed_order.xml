@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BrowsePics$PlacedOrder">
+    tools:context=".PlacedOrder">
 
     <TextView
-        android:id="@+id/placed"
+        android:id="@+id/placedPrice"
         android:layout_width="396dp"
         android:layout_height="108dp"
-        android:text="Your Order 2011219208 has been placed!!  You can pick it on 11/12/2020 at 11:00AM"
+        android:hint="XYZ you order has been placed with order Id: xxxxxxx with the total price: $$ . Your order will be ready by mm/dd/yyyy hh:mm"
         android:textColor="#F44336"
         android:textSize="20dp"
+        android:text="hello"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
@@ -33,4 +34,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.227" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

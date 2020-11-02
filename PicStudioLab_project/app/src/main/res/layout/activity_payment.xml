@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.099" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/delivery"
         android:layout_width="276dp"
         android:layout_height="47dp"
         android:text="Cash on Delivery"
@@ -47,51 +47,23 @@
         app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246" />
+        app:layout_constraintVertical_bias="0.304" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/customerValue"
         android:layout_width="254dp"
         android:layout_height="39dp"
         android:editable="true"
         android:ems="10"
+        android:hint="Billing Name"
         android:inputType="textPersonName"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="236dp"
-        android:layout_height="28dp"
-        android:text="Order number"
-        android:textColor="#2E053C"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="254dp"
-        android:layout_height="39dp"
-
-        android:editable="true"
-        android:ems="10"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.349" />
 
     <TextView
         android:id="@+id/textView4"
@@ -103,25 +75,26 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.489" />
+        app:layout_constraintVertical_bias="0.403" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/dateValue"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:editable="true"
+        android:hint="MM/DD/YYYY"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <TextView
         android:id="@+id/textView5"
@@ -135,25 +108,26 @@
         app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646" />
+        app:layout_constraintVertical_bias="0.554" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/timeValue"
         android:layout_width="249dp"
         android:layout_height="55dp"
         android:editable="true"
         android:ems="10"
+        android:hint="HH:MM"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/agree"
         android:layout_width="326dp"
         android:layout_height="59dp"
         android:clickable="true"
@@ -168,7 +142,7 @@
         app:layout_constraintVertical_bias="0.808" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/placeOrder"
         android:layout_width="151dp"
         android:layout_height="45dp"
         android:background="#F44336"
