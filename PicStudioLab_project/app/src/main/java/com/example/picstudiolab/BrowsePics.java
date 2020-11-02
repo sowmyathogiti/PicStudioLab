@@ -81,7 +81,7 @@ public class BrowsePics extends AppCompatActivity {
 //            @Override
 //            public void onClick(View view) {
 //                browseIntent = new Intent(Intent.ACTION_GET_CONTENT);
-//                browseIntent.setType("/");
+//                browseIntent.setType("*/*");
 //                startActivityForResult(browseIntent,20);
 //            }
 //        });
