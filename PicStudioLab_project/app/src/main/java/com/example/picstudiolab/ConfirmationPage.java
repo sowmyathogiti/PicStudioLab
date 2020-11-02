@@ -7,7 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+
+
 public class ConfirmationPage extends AppCompatActivity {
+
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     Button save;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
