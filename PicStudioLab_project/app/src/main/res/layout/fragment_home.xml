@@ -104,20 +104,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.755" />
 
-    <Button
-        android:id="@+id/location"
-        android:layout_width="122dp"
-        android:layout_height="55dp"
-        android:background="#4CAF50"
-        android:text="Locate us!"
-        android:textColor="#F8F8F8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
-
     <TextView
         android:id="@+id/welcomemsg"
         android:layout_width="359dp"

@@ -28,15 +28,15 @@ public class HomeFragment extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-        Button locationbtn = root.findViewById(R.id.location);
+//        Button locationbtn = root.findViewById(R.id.location);
 
-        locationbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent cartInt = new Intent(getActivity(), Map.class);
-                startActivity(cartInt);
-            }
-        });
+//        locationbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent cartInt = new Intent(getActivity(), Map.class);
+//                startActivity(cartInt);
+//            }
+//        });
 
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

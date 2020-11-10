@@ -8,18 +8,18 @@
 
     <TextView
         android:id="@+id/placedPrice"
-        android:layout_width="396dp"
-        android:layout_height="108dp"
+        android:layout_width="393dp"
+        android:layout_height="212dp"
         android:hint="XYZ you order has been placed with order Id: xxxxxxx with the total price: $$ . Your order will be ready by mm/dd/yyyy hh:mm"
+        android:text="hello"
         android:textColor="#F44336"
         android:textSize="20dp"
-        android:text="hello"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.464" />
 
     <TextView
         android:id="@+id/hurray"
