@@ -7,6 +7,45 @@
     tools:context=".Wedding">
 
 
+    <TextView
+        android:id="@+id/frame7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame 3 - $12"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <TextView
+        android:id="@+id/frame6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame 12- $11"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/frame5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame 1 - $10"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/minus2"
         android:layout_width="wrap_content"
@@ -137,45 +176,45 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="187dp"
-        android:layout_height="154dp"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141"
+        app:layout_constraintVertical_bias="0.199"
         app:srcCompat="@drawable/wedding1" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="170dp"
-        android:layout_height="135dp"
+        android:layout_width="138dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439"
+        app:layout_constraintVertical_bias="0.462"
         app:srcCompat="@drawable/wedding2" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="179dp"
-        android:layout_height="183dp"
+        android:layout_width="134dp"
+        android:layout_height="113dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.755"
+        app:layout_constraintVertical_bias="0.766"
         app:srcCompat="@drawable/wedding3" />
 
     <Button

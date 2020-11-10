@@ -6,6 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".Invitation">
 
+    <TextView
+        android:id="@+id/frame9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame 12- $11"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <TextView
+        android:id="@+id/frame8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame 1 - $10"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/minus4"
         android:layout_width="wrap_content"
@@ -140,26 +166,26 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="154dp"
-        android:layout_height="169dp"
+        android:layout_width="137dp"
+        android:layout_height="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176"
+        app:layout_constraintVertical_bias="0.242"
         app:srcCompat="@drawable/invitation1" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="151dp"
-        android:layout_height="164dp"
+        android:layout_width="123dp"
+        android:layout_height="101dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527"
+        app:layout_constraintVertical_bias="0.553"
         app:srcCompat="@drawable/invitation3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
