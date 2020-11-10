@@ -38,10 +38,10 @@ public class Invitation extends AppCompatActivity {
             public void onClick(View v) {
                 Intent browseIntent = new Intent(getApplicationContext(), BrowsePics.class);
                 if (count7 > 0) {
-                    order.add(new Order("Invitation Frame 1", count7, 15.0));
+                    order.add(new Order("Invitation Frame 1", count7, 10.0));
                 }
                 if (count8 > 0) {
-                    order.add(new Order("Invitation Frame 2", count8, 16.0));
+                    order.add(new Order("Invitation Frame 2", count8, 11.0));
                 }
 
                 browseIntent.putParcelableArrayListExtra("order", order);

@@ -23,7 +23,7 @@ public class ConfirmationPage extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Attachment has been saved",Toast.LENGTH_LONG);
+                Toast.makeText(getApplicationContext(),"Attachment has been saved",Toast.LENGTH_LONG).show();
             }
         });
     }

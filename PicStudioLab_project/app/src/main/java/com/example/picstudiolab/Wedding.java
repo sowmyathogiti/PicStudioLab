@@ -11,10 +11,12 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+
 public class Wedding extends AppCompatActivity {
     Button add;
 //    Button attach;
-
+ArrayList<Order> order = new ArrayList<>();
     int count4,count5,count6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,9 @@ public class Wedding extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intadd = new Intent(getApplicationContext(), BrowsePics.class);
-                startActivity(intadd);
+//                Intent intadd = new Intent(getApplicationContext(), BrowsePics.class);
+//                startActivity(intadd);
+                cartClick();
             }
         });
 //        attach.setOnClickListener(new View.OnClickListener() {
@@ -72,5 +75,21 @@ public class Wedding extends AppCompatActivity {
                 addvalue6.setText(num);
             }
         });
+    }
+
+    private void cartClick() {
+        Intent browseIntent = new Intent(getApplicationContext(), BrowsePics.class);
+        if (count4 > 0) {
+            order.add(new Order("Regular Frame 1", count4, 10.0));
+        }
+        if (count5 > 0) {
+            order.add(new Order("Regular Frame 2", count5, 11.0));
+        }
+        if (count6 > 0) {
+            order.add(new Order("Regular Frame 3", count6, 12.0));
+        }
+
+        browseIntent.putParcelableArrayListExtra("order", order);
+        startActivity(browseIntent);
     }
 }
