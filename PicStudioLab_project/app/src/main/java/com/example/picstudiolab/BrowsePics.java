@@ -51,7 +51,7 @@ public class BrowsePics extends AppCompatActivity {
         Button browse1 =findViewById(R.id.browse1);
 //        Button browse2 =findViewById(R.id.browse2);
         Button checkout =findViewById(R.id.checkout);
-        fileNames = findViewById(R.id.fileNames);
+//        fileNames = findViewById(R.id.fileNames);
         attach = findViewById(R.id.attach);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference("Images");
