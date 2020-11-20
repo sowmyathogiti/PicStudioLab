@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,8 +27,8 @@ import java.util.Map;
 
 public class Account extends AppCompatActivity {
 
-    EditText firstNameEditText, lastNameEditText, middleNameEditText, ageEditText, emailEditText, phoneEditText, passwordEditText, confirmPasswordEditText;
-    String firstNameString, lastNameString, middleNameString, ageString, emailString="em", phoneString, passwordString="pa", confirmPasswordString, customerID;
+    EditText firstNameEditText, lastNameEditText, middleNameEditText, ageEditText, emailEditText, phoneEditText, passwordEditText, confirmPasswordEditText, addressEditText;
+    String firstNameString, lastNameString, middleNameString, ageString, emailString="em", phoneString, passwordString="pa", confirmPasswordString, customerID, addressString;
     Button registerButton;
     RadioGroup radioGroup;
     String genderChoice;
@@ -41,17 +40,17 @@ public class Account extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        firstNameEditText = findViewById(R.id.firstnamevalue);
-        lastNameEditText = findViewById(R.id.lastnamevalue);
-        middleNameEditText = findViewById(R.id.middlenamevalue);
-        ageEditText = findViewById(R.id.agevalue);
+        firstNameEditText = findViewById(R.id.Updfirstnamevalue);
+        lastNameEditText = findViewById(R.id.Updlastnamevalue);
+        middleNameEditText = findViewById(R.id.Updmiddlenamevalue);
+        ageEditText = findViewById(R.id.Updagevalue);
         emailEditText = findViewById(R.id.emailvalueAccount);
-        phoneEditText = findViewById(R.id.phonevalue);
+        phoneEditText = findViewById(R.id.Updphonevalue);
         passwordEditText = findViewById(R.id.pwdvalue1Account);
         confirmPasswordEditText = findViewById(R.id.pwdvalue2);
-        registerButton = findViewById(R.id.accountcreate);
+        registerButton = findViewById(R.id.UpdBtn);
         radioGroup = findViewById(R.id.genderGroup);
-
+        addressEditText = findViewById(R.id.CreateAddressValue);
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -79,6 +78,7 @@ public class Account extends AppCompatActivity {
                 phoneString = phoneEditText.getText().toString();
                 passwordString = passwordEditText.getText().toString();
                 confirmPasswordString = confirmPasswordEditText.getText().toString();
+                addressString = addressEditText.getText().toString();
                 Log.d("email","email: "+emailString);
                 Log.d("password","password: "+passwordString);
 
@@ -95,6 +95,8 @@ public class Account extends AppCompatActivity {
                             customer.put("Age",ageString);
                             customer.put("EmailID",emailString);
                             customer.put("Password",passwordString);
+                            customer.put("id",customerID);
+                            customer.put("address",addressString);
                             documentReference.set(customer).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

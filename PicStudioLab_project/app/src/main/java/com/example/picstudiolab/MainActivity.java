@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -53,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 if (task.isSuccessful()) {
                                     if (mAuth.getCurrentUser().isEmailVerified()) {
-                                        Toast.makeText(getApplicationContext(), "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "user: "+mAuth.getCurrentUser().getUid(), Toast.LENGTH_SHORT).show();
+                                        Log.d("auth","user: "+mAuth.getCurrentUser().getUid());
                                         startActivity(new Intent(getApplicationContext(), Home.class));
                                     } else {
                                         Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
@@ -70,15 +72,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
 //
-        if(UserName.getText().toString().length()==0)
-            UserName.setError( "Email Id is required!" );
-        else
-            createLogin();
-
-        if(Password.getText().toString().length()==0)
-            Password.setError( "Password Id is required!" );
-        else
-            createLogin();
+//        if(UserName.getText().toString().length()==0)
+//            UserName.setError( "Email Id is required!" );
+//        else
+//            createLogin();
+//
+//        if(Password.getText().toString().length()==0)
+//            Password.setError( "Password Id is required!" );
+//        else
+//            createLogin();
 
         help.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,12 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 openSingUp();
             }
         });
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openLogin();
-            }
-        });
+//        login.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openLogin();
+//            }
+//        });
 
         fb.setOnClickListener(new View.OnClickListener() {
             @Override

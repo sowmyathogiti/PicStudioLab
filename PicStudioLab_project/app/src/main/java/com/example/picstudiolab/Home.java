@@ -2,11 +2,14 @@ package com.example.picstudiolab;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.picstudiolab.ui.dashboard.DashboardFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -18,12 +21,16 @@ import androidx.navigation.ui.NavigationUI;
 
 public class Home extends AppCompatActivity {
     Button framebtn, framebtn2, framebtn3;
+    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        framebtn = findViewById(R.id.framebtn);
+        mAuth = FirebaseAuth.getInstance();
+//        Toast.makeText(getApplicationContext(),mAuth.getCurrentUser().getUid(),Toast.LENGTH_SHORT).show();
+//        Log.d("auth","auth: "+mAuth.getCurrentUser().getUid());
+        //framebtn = findViewById(R.id.framebtn);
 
 //        framebtn.setOnClickListener(new View.OnClickListener() {
 //            @Override

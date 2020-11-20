@@ -7,15 +7,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.pdf.PdfDocument;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.Set;
+
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,8 +49,9 @@ public class BrowsePics extends AppCompatActivity {
 
     Intent browseIntent;
     String pathFile= "";
-    TextView fileNames;
+    TextView reviewFiles;
     Button attach;
+    ImageView ImageDisp;
     Uri filePath;
     ArrayList<Order> order = new ArrayList<>();
     StorageReference storageReference, ref;
@@ -53,6 +69,7 @@ public class BrowsePics extends AppCompatActivity {
         Button checkout =findViewById(R.id.checkout);
 //        fileNames = findViewById(R.id.fileNames);
         attach = findViewById(R.id.attach);
+
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference("Images");
 
@@ -76,15 +93,7 @@ public class BrowsePics extends AppCompatActivity {
 
             }
         });
-//
-//        browse2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                browseIntent = new Intent(Intent.ACTION_GET_CONTENT);
-//                browseIntent.setType("*/*");
-//                startActivityForResult(browseIntent,20);
-//            }
-//        });
+
 
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,17 +161,47 @@ public class BrowsePics extends AppCompatActivity {
                 && data.getData() != null){
 
             filePath = data.getData();
-        }
-//        switch (requestCode) {
-//            case 10:
-//                if (resultCode == RESULT_OK) {
-//                    String path = data.getData().getPath().toString();
-//                    pathFile = pathFile.concat(path) + "\n";
-//                    fileNames.setText(pathFile);
-//                }
-//                break;
+//            reviewFiles.setText(data.getDataString());
+//            String[] filepath = {MediaStore.Images.Media.DATA};
+//            Cursor cursor = getContentResolver().query(filePath,filepath,null,null,null);
+//            cursor.moveToFirst();
+//            int columnIndex = cursor.getColumnIndex(filepath[0]);
+//            String myPath = cursor.getString(columnIndex);
+//            cursor.close();
 //
-//        }
+//            Bitmap bitmap = BitmapFactory.decodeFile(myPath);
+//            ImageDisp.setImageBitmap(bitmap);
+//
+//            PdfDocument pdfdocument = new PdfDocument();
+//            PdfDocument.PageInfo pi = new PdfDocument.PageInfo.Builder(bitmap.getWidth(),bitmap.getHeight(),1).create();
+//            PdfDocument.Page page = pdfdocument.startPage(pi);
+//
+//            Canvas  canvas = page.getCanvas();
+//            Paint paint = new Paint();
+//            paint.setColor(Color.parseColor("#FFFFFF"));
+//            canvas.drawPaint(paint);
+//
+//            bitmap = Bitmap.createScaledBitmap(bitmap,bitmap.getWidth(),bitmap.getHeight(),true);
+//            paint.setColor(Color.BLUE);
+//            canvas.drawBitmap(bitmap,0,0,null);
+//            pdfdocument.finishPage(page);
+//
+//            //saving image
+//
+//            File root = new File(Environment.getExternalStorageDirectory(),"PDF Folder");
+//            if(!root.exists()){
+//                root.mkdir();
+//            }
+//            File file = new File(root,"picture pdf");
+//            try{
+//                FileOutputStream fileOutputStream = new FileOutputStream(file);
+//                pdfdocument.writeTo(fileOutputStream);
+//                }catch (IOException e){
+//                e.printStackTrace();
+//            }
+//            pdfdocument.close();
+        }
+
     }
 
     public static class PlacedOrder extends AppCompatActivity {
