@@ -147,6 +147,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     private boolean validations() {
-        return true;
+//        return true;
+        if(UserName.getText().toString().length()==0 && Password.getText().toString().length()==0) {
+            UserName.setError("Email Id is required!");
+            Password.setError("Password is required");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
     }
 }
