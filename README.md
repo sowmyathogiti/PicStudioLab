@@ -1,8 +1,8 @@
 # Project Name: PicStudio Lab
 ## Team Members:
-. Sowmya Thogiti
-. Vigneshwar Reddy Lenkala
-. Bharath Kumar Gandhasiri
+- Sowmya Thogiti
+- Vigneshwar Reddy Lenkala
+- Bharath Kumar Gandhasiri
 ## Project Logo:  
 
 ## Project problem/issues cover: 
