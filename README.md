@@ -42,6 +42,22 @@ The purpose of payment activity is to help users to select the “Take Away” o
 The purpose of map activity is to help users identify the locations of the PicStudio Lab where one can walk in directly to collect their orders. This also has a map view shown and has navigation options to check whether it is on your way to work where people can grab their orders easily.
 ### GitHub Link: 
 https://github.com/sowmyathogiti/PicStudioLab
+### Sample data:
+Email id: sowmyathogiti27@gmail.com
+Password: Welcome@123
 ### Roughsketches:
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login1.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login2.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile2.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile3.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile4.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile5.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile6.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile7.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/home.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/services.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/updateprpfile.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/gmail.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/fb.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/forgot.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/resend.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/browse.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/images.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/invitation.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/regular.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/wedding.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/checkout.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/order.png)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/pdf.png) | ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/zoom.png)
 
 
