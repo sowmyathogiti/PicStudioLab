@@ -72,4 +72,4 @@ Password: Welcome@123
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/pdf.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/zoom.png" width="250" height="400">
 ### Flow chart:
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/logo.jpg)
+![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/flowchart.jpg)
