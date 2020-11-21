@@ -46,7 +46,12 @@ https://github.com/sowmyathogiti/PicStudioLab
 Email id: sowmyathogiti27@gmail.com
 Password: Welcome@123
 ### Roughsketches:
-<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login.png" width="250" height="400"> | <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login1.png" width="250" height="400">
+
+- This is login page, Here user can login into the picstudio lab by entering his/her credentials. If the user is new then he can signup in this page.
+
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login.png" width="250" height="400"> 
+
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login1.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login2.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile2.png" width="250" height="400">
