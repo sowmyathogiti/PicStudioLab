@@ -4,7 +4,7 @@
 - Vigneshwar Reddy Lenkala
 - Bharath Kumar Gandhasiri
 ## Project Logo:  
-![logo](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/logo.jpg)
+![logo](https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/logo.jpg)
 ## Project problem/issues cover: 
 Many stores have different kinds of shopping areas including groceries, cosmetics, clothing, Photographic studios, Floristry, etc. Nowadays people are being so busy, as they don’t have time to step into a photographic studio and grab the frames by selecting them in-person providing the photographs of their loved ones. But our application PicStudio Lab is going to make it easy for people in making their memories with a wide variety of frames available to rest on their home walls by just ordering online.
 ## Activities and its purposes:
