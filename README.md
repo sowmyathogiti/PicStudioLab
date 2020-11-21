@@ -59,7 +59,7 @@ Password: Welcome@123
 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login2.png" width="250" height="400">
 
-- 
+- This is the signup page for new users, here the user needs to give his/her first name, middle name, last name, gender, age, email, phone number, create password and confirm password or else it shows a warning pop up message.
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile2.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile3.png" width="250" height="400">
