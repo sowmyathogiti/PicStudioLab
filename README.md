@@ -94,9 +94,13 @@ Password: Welcome@123
 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/browse.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/images.png" width="250" height="400">
+
+- In this page user can select different frames and can add them into cart
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/invitation.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/regular.png" width="250" height="400">
-<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/weddng.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/weddng.png" width="250" height="400">2
+
+- Once the user done with his choice he/she can checkout.
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/checkout.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/order.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/pdf.png" width="250" height="400">
