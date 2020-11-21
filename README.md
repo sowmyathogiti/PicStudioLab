@@ -51,8 +51,15 @@ Password: Welcome@123
 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login.png" width="250" height="400"> 
 
+- If the user doesn't enter the email then it shows an warning message "Emailid is required"
+
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login1.png" width="250" height="400">
+
+-  If the user doesn't enter the password then it shows an warning message "Password is required"
+
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/login2.png" width="250" height="400">
+
+- 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile2.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile3.png" width="250" height="400">
