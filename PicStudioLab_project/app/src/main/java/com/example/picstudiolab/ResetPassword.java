@@ -64,6 +64,4 @@ public class ResetPassword extends AppCompatActivity {
         startActivity(back);
     }
 
-//    public static class dashboardFragment {
-//    }
 }
