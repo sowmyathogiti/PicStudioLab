@@ -125,14 +125,6 @@ public class Account extends AppCompatActivity {
                                 }
                             });
                         }
-//                        else {
-//                            Updfirstnamevalue.setError("First name is required");
-//                            Updlastnamevalue.setError("Last name is required");
-//                            emailvalueAccount.setError("Email Id is required");
-//                            Updphonevalue.setError("Phone number is required");
-//                            pwdvalue1Account.setError("Both passwords must match");
-//                            pwdvalue2.setError("Both passwords must match");
-//                        }
 
                     }
 
