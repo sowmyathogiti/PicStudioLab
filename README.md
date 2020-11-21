@@ -46,7 +46,7 @@ https://github.com/sowmyathogiti/PicStudioLab
 Email id: sowmyathogiti27@gmail.com
 Password: Welcome@123
 ### Roughsketches:
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login.png 200*400)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login1.png)
+![ ](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login.png = 250x250)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login1.png)
 ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login2.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile.png)
 ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile2.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile3.png)
 ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile4.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile5.png)
