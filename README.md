@@ -63,6 +63,9 @@ Password: Welcome@123
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile2.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile3.png" width="250" height="400">
+
+- In the signup page there are some optional fileds like middle name and age.
+
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile4.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile5.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile6.png" width="250" height="400">
