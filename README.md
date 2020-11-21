@@ -98,12 +98,16 @@ Password: Welcome@123
 - In this page user can select different frames and can add them into cart
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/invitation.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/regular.png" width="250" height="400">
-<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/weddng.png" width="250" height="400">2
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/weddng.png" width="250" height="400">
 
 - Once the user done with his choice he/she can checkout.
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/checkout.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/order.png" width="250" height="400">
+
+- Finally user can see the confirmation page.
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/pdf.png" width="250" height="400">
+
+- We also providing zoom link for the user.
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/zoom.png" width="250" height="400">
 ### Flow chart:
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/flowchart.png">
