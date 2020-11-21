@@ -46,18 +46,28 @@ https://github.com/sowmyathogiti/PicStudioLab
 Email id: sowmyathogiti27@gmail.com
 Password: Welcome@123
 ### Roughsketches:
-![ ](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login.png = 250x250)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login1.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login2.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile2.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile3.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile4.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile5.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile6.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile7.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/home.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/services.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/updateprpfile.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/gmail.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/fb.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/forgot.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/resend.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/browse.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/images.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/invitation.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/regular.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/wedding.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/checkout.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/order.png)
-![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/pdf.png)  ![](https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/zoom.png)
-
-
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login.png" width="250" height="400"> | <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login1.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/login2.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile2.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile3.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile4.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile5.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile6.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/profile7.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/home.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/services.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/updateprpfile.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/gmail.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/fb.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/forgot.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/resend.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/browse.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/images.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/invitation.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/regular.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/wedding.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/checkout.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/order.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/pdf.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/images/zoom.png" width="250" height="400">
