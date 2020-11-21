@@ -74,7 +74,7 @@ Password: Welcome@123
 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile7.png" width="250" height="400">
 
--- After the user signing up, the user can see a page where it have three tabs home , services and profile if the user open home page he/she can see a welcome message  and the user can aslo see opening timings. 
+-After the user signing up, the user can see a page where it have three tabs home , services and profile if the user open home page he/she can see a welcome message  and the user can aslo see opening timings. 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/home.png" width="250" height="400">
 
 - In services page user can services that the  picstudio lab offering 
@@ -83,7 +83,7 @@ Password: Welcome@123
 - In the profile page user can see his/her details with an editing option
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/updateprpfile.png" width="250" height="400">
 
-
+- User can also dirctly signup with google accounts or by facebook account. So that if the user forgets passwords we can send password to they provided mails
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/gmail.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/fb.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/forgot.png" width="250" height="400">
