@@ -41,7 +41,7 @@ public class SentReset extends AppCompatActivity {
         mAuth.sendPasswordResetEmail(mail).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-
+                // code for mail confirmation which was sent to mail 
                 if(task.isSuccessful()){
                     Toast.makeText(SentReset.this,"Password reset link is sent to the given Email Id",Toast.LENGTH_SHORT);
                 }
