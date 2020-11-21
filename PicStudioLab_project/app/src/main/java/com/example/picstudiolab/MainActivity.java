@@ -71,16 +71,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//
-//        if(UserName.getText().toString().length()==0)
-//            UserName.setError( "Email Id is required!" );
-//        else
-//            createLogin();
-//
-//        if(Password.getText().toString().length()==0)
-//            Password.setError( "Password Id is required!" );
-//        else
-//            createLogin();
 
         help.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,12 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 openSingUp();
             }
         });
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                openLogin();
-//            }
-//        });
+
 
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
