@@ -84,6 +84,10 @@ Password: Welcome@123
 - In the profile page user can see his/her details with an editing option
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/updateprpfile.png" width="250" height="400">
 
+- In the update profile page, we can update the basic details of the user by just clicking update button in the profile fragment. The details entered here can be stored in the database and display the same in the profile page by updating the entered values of the user.
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/updating.png" width="250" height="400">
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/updateProfile.png" width="250" height="400">
+
 - User can also dirctly signup with google accounts or by facebook account. So that if the user forgets passwords we can send password to they provided mails
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/gmail.png" width="250" height="400">
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/fb.png" width="250" height="400">
