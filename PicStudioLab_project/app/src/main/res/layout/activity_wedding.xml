@@ -7,6 +7,20 @@
     tools:context=".Wedding">
 
 
+    <Button
+        android:id="@+id/addWed"
+        android:layout_width="395dp"
+        android:layout_height="64dp"
+        android:background="#CF7069"
+        android:text="Add to Cart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
     <TextView
         android:id="@+id/frame7"
         android:layout_width="wrap_content"
@@ -216,21 +230,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.766"
         app:srcCompat="@drawable/wedding3" />
-
-    <Button
-        android:id="@+id/addWed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#E81717"
-        android:text="Add to cart"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/minus1"
