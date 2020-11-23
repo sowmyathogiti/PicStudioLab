@@ -51,6 +51,7 @@
         android:id="@+id/link"
         android:layout_width="332dp"
         android:layout_height="107dp"
+        android:clickable="true"
         android:text="https://zoom.us/j/98769858501?pwd=K0NKQm5uUUpiYWVGaFlxMm5LcEZ2QT09"
         android:textColor="#2196F3"
         android:textSize="20sp"
