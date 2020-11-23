@@ -17,6 +17,7 @@ public class FrameSetup extends AppCompatActivity {
 
     ArrayList<Order> order = new ArrayList<>();
     int count1, count2, count3, count9;
+    TextView addvalue1,addvalue2,addvalue3,addvalue9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +34,10 @@ public class FrameSetup extends AppCompatActivity {
         FloatingActionButton minus8 = findViewById(R.id.minus8);
         FloatingActionButton minus9 = findViewById(R.id.minus9);
 
-        final TextView addvalue1 = findViewById(R.id.addvalue1);
-        final TextView addvalue2 = findViewById(R.id.addvalue2);
-        final TextView addvalue3 = findViewById(R.id.addvalue3);
-        final TextView addvalue9 = findViewById(R.id.addvalue9);
+         addvalue1 = findViewById(R.id.addvalue1);
+         addvalue2 = findViewById(R.id.addvalue2);
+         addvalue3 = findViewById(R.id.addvalue3);
+         addvalue9 = findViewById(R.id.addvalue9);
 
         cartbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,22 +125,25 @@ public class FrameSetup extends AppCompatActivity {
     }
 
     private void cartClick() {
-        Intent browseIntent = new Intent(getApplicationContext(), BrowsePics.class);
-        if (count1 > 0) {
-            order.add(new Order("Regular Frame 1", count1, 10.0));
-        }
-        if (count2 > 0) {
-            order.add(new Order("Regular Frame 2", count2, 11.0));
-        }
-        if (count3 > 0) {
-            order.add(new Order("Regular Frame 3", count3, 12.0));
-        }
-        if (count9 > 0) {
-            order.add(new Order("Regular Frame 4", count9, 13.0));
-        }
+        if(count1>0||count2>0||count3>0||count9>0) {
 
-        browseIntent.putParcelableArrayListExtra("order", order);
-        startActivity(browseIntent);
+            Intent browseIntent = new Intent(getApplicationContext(), BrowsePics.class);
+            if (count1 > 0) {
+                order.add(new Order("Regular Frame 1", count1, 10.0));
+            }
+            if (count2 > 0) {
+                order.add(new Order("Regular Frame 2", count2, 11.0));
+            }
+            if (count3 > 0) {
+                order.add(new Order("Regular Frame 3", count3, 12.0));
+            }
+            if (count9 > 0) {
+                order.add(new Order("Regular Frame 4", count9, 13.0));
+            }
+
+            browseIntent.putParcelableArrayListExtra("order", order);
+            startActivity(browseIntent);
+        }
     }
 
 }

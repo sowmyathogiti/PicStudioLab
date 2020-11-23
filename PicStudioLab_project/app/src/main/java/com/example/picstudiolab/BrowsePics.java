@@ -3,10 +3,17 @@ package com.example.picstudiolab;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import com.squareup.picasso.Picasso;
+
+import android.Manifest;
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,6 +24,8 @@ import android.graphics.pdf.PdfDocument;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -47,17 +56,24 @@ import java.util.concurrent.TimeUnit;
 
 public class BrowsePics extends AppCompatActivity {
 
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
     Intent browseIntent;
     String pathFile= "";
     TextView reviewFiles;
     Button attach;
-    ImageView ImageDisp;
+
     Uri filePath;
     ArrayList<Order> order = new ArrayList<>();
     StorageReference storageReference, ref;
     FirebaseStorage storage;
     String imageUrl = "";
-    //    public static final int REQUEST_CODE = 10;
+    Bitmap bitmap;
+    String dummyString="";
+
     Intent i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,10 +81,9 @@ public class BrowsePics extends AppCompatActivity {
         setContentView(R.layout.activity_browse_pics);
 
         Button browse1 =findViewById(R.id.browse1);
-//        Button browse2 =findViewById(R.id.browse2);
+
         Button checkout =findViewById(R.id.checkout);
-//        fileNames = findViewById(R.id.fileNames);
-        attach = findViewById(R.id.attach);
+        reviewFiles = findViewById(R.id.reviewFiles);
 
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference("Images");
@@ -78,13 +93,6 @@ public class BrowsePics extends AppCompatActivity {
 
 
         Log.d("order",order.toString());
-        attach.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intattach = new Intent(getApplicationContext(), ConfirmationPage.class);
-                startActivity(intattach);
-            }
-        });
 
         browse1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +114,56 @@ public class BrowsePics extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void getPDF() {
+
+            PdfDocument pdfdocument = new PdfDocument();
+            PdfDocument.PageInfo pi = new PdfDocument.PageInfo.Builder(bitmap.getWidth(),bitmap.getHeight(),1).create();
+            PdfDocument.Page page = pdfdocument.startPage(pi);
+
+            Canvas  canvas = page.getCanvas();
+            Paint paint = new Paint();
+            paint.setColor(Color.parseColor("#FFFFFF"));
+            canvas.drawPaint(paint);
+
+            bitmap = Bitmap.createScaledBitmap(bitmap,bitmap.getWidth(),bitmap.getHeight(),true);
+            paint.setColor(Color.BLUE);
+            canvas.drawBitmap(bitmap,0,0,null);
+            pdfdocument.finishPage(page);
+
+            verifyStoragePermissions(this);
+            File root = new File(Environment.getExternalStorageDirectory(),"/Frame.pdf");
+            boolean success = true;
+            if(!root.exists()){
+                success = root.mkdir();
+            }
+            Log.d("suc: ",success + "");
+
+            try{
+                FileOutputStream fileOutputStream = new FileOutputStream(root);
+                pdfdocument.writeTo(fileOutputStream);
+                Log.d("path: ",Environment.getExternalStorageDirectory().getAbsolutePath());
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+            pdfdocument.close();
+
+
+    }
+
+    public static void verifyStoragePermissions(Activity activity) {
+        // Check if we have write permission
+        int permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
     }
 
     private void uploadFile() {
@@ -146,8 +204,9 @@ public class BrowsePics extends AppCompatActivity {
     }
 
     private void selectFile() {
+        verifyStoragePermissions(this);
         browseIntent = new Intent(Intent.ACTION_GET_CONTENT);
-        browseIntent.setType("image/*");
+        browseIntent.setType("*/*");
         startActivityForResult(browseIntent,1);
     }
 
@@ -161,45 +220,10 @@ public class BrowsePics extends AppCompatActivity {
                 && data.getData() != null){
 
             filePath = data.getData();
-//            reviewFiles.setText(data.getDataString());
-//            String[] filepath = {MediaStore.Images.Media.DATA};
-//            Cursor cursor = getContentResolver().query(filePath,filepath,null,null,null);
-//            cursor.moveToFirst();
-//            int columnIndex = cursor.getColumnIndex(filepath[0]);
-//            String myPath = cursor.getString(columnIndex);
-//            cursor.close();
-//
-//            Bitmap bitmap = BitmapFactory.decodeFile(myPath);
-//            ImageDisp.setImageBitmap(bitmap);
-//
-//            PdfDocument pdfdocument = new PdfDocument();
-//            PdfDocument.PageInfo pi = new PdfDocument.PageInfo.Builder(bitmap.getWidth(),bitmap.getHeight(),1).create();
-//            PdfDocument.Page page = pdfdocument.startPage(pi);
-//
-//            Canvas  canvas = page.getCanvas();
-//            Paint paint = new Paint();
-//            paint.setColor(Color.parseColor("#FFFFFF"));
-//            canvas.drawPaint(paint);
-//
-//            bitmap = Bitmap.createScaledBitmap(bitmap,bitmap.getWidth(),bitmap.getHeight(),true);
-//            paint.setColor(Color.BLUE);
-//            canvas.drawBitmap(bitmap,0,0,null);
-//            pdfdocument.finishPage(page);
-//
-//            //saving image
-//
-//            File root = new File(Environment.getExternalStorageDirectory(),"PDF Folder");
-//            if(!root.exists()){
-//                root.mkdir();
-//            }
-//            File file = new File(root,"picture pdf");
-//            try{
-//                FileOutputStream fileOutputStream = new FileOutputStream(file);
-//                pdfdocument.writeTo(fileOutputStream);
-//                }catch (IOException e){
-//                e.printStackTrace();
-//            }
-//            pdfdocument.close();
+            ///pdf part
+            dummyString = dummyString + data.getData().getPath()+"\n";
+            reviewFiles.setText(dummyString);
+
         }
 
     }

@@ -18,6 +18,8 @@ public class Wedding extends AppCompatActivity {
 //    Button attach;
 ArrayList<Order> order = new ArrayList<>();
     int count4,count5,count6;
+    TextView addvalue4,addvalue5,addvalue6;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,28 +28,21 @@ ArrayList<Order> order = new ArrayList<>();
         FloatingActionButton add4 = findViewById(R.id.add4);
         FloatingActionButton add5 = findViewById(R.id.add5);
         FloatingActionButton add6 = findViewById(R.id.add6);
-
-        final TextView addvalue4 = findViewById(R.id.addvalue4);
-        final TextView addvalue5 = findViewById(R.id.addvalue5);
-        final TextView addvalue6 = findViewById(R.id.addvalue6);
+        FloatingActionButton minus1 = findViewById(R.id.minus1);
+        FloatingActionButton minus2 = findViewById(R.id.minus2);
+        FloatingActionButton minus3 = findViewById(R.id.minus3);
+        addvalue4 = findViewById(R.id.addvalue4);
+        addvalue5 = findViewById(R.id.addvalue5);
+        addvalue6 = findViewById(R.id.addvalue6);
 
         add= findViewById(R.id.addWed);
-//        attach = findViewById(R.id.attach);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intadd = new Intent(getApplicationContext(), BrowsePics.class);
-//                startActivity(intadd);
+
                 cartClick();
             }
         });
-//        attach.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intattach = new Intent(getApplicationContext(), ConfirmationPage.class);
-//                startActivity(intattach);
-//            }
-//        });
 
         add4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +50,16 @@ ArrayList<Order> order = new ArrayList<>();
                 count4++;
                 String num = (String.valueOf(count4));
                 addvalue4.setText(num);
+            }
+        });
+        minus1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (count4 > 0) {
+                    count4--;
+                    String num = (String.valueOf(count4));
+                    addvalue4.setText(num);
+                }
             }
         });
 
@@ -66,6 +71,16 @@ ArrayList<Order> order = new ArrayList<>();
                 addvalue5.setText(num);
             }
         });
+        minus2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (count5 > 0) {
+                    count5--;
+                    String num = (String.valueOf(count5));
+                    addvalue5.setText(num);
+                }
+            }
+        });
 
         add6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,21 +90,34 @@ ArrayList<Order> order = new ArrayList<>();
                 addvalue6.setText(num);
             }
         });
+        minus3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (count6 > 0) {
+                    count6--;
+                    String num = (String.valueOf(count6));
+                    addvalue6.setText(num);
+                }
+            }
+        });
+
     }
 
     private void cartClick() {
-        Intent browseIntent = new Intent(getApplicationContext(), BrowsePics.class);
-        if (count4 > 0) {
-            order.add(new Order("Regular Frame 1", count4, 10.0));
-        }
-        if (count5 > 0) {
-            order.add(new Order("Regular Frame 2", count5, 11.0));
-        }
-        if (count6 > 0) {
-            order.add(new Order("Regular Frame 3", count6, 12.0));
-        }
+        if((count4 > 0) ||(count5 >0) || (count6>0)) {
+            Intent browseIntent = new Intent(getApplicationContext(), BrowsePics.class);
+            if (count4 > 0) {
+                order.add(new Order("Regular Frame 1", count4, 10.0));
+            }
+            if (count5 > 0) {
+                order.add(new Order("Regular Frame 2", count5, 11.0));
+            }
+            if (count6 > 0) {
+                order.add(new Order("Regular Frame 3", count6, 12.0));
+            }
 
-        browseIntent.putParcelableArrayListExtra("order", order);
-        startActivity(browseIntent);
+            browseIntent.putParcelableArrayListExtra("order", order);
+            startActivity(browseIntent);
+        }
     }
 }

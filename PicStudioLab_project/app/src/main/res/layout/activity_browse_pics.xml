@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".BrowsePics">
 
-    <Button
-        android:id="@+id/attach"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#8BC34A"
-        android:text="Get PDF"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
-
     <TextView
         android:id="@+id/browsemsg"
         android:layout_width="wrap_content"
@@ -38,8 +24,9 @@
         android:id="@+id/frame1text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Frames"
+        android:text="Upload here"
         android:textSize="18dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
@@ -80,23 +67,12 @@
         android:layout_width="340dp"
         android:layout_height="255dp"
         android:hint="Review your file names uploaded"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.418" />
-
-    <ImageView
-        android:id="@+id/ImageDisp"
-        android:layout_width="97dp"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

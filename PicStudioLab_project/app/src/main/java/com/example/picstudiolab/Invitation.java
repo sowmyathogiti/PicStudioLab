@@ -17,6 +17,7 @@ public class Invitation extends AppCompatActivity {
     Button zoom2;
     ArrayList<Order> order = new ArrayList<>();
     int count7,count8;
+    TextView addvalue7,addvalue8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +28,8 @@ public class Invitation extends AppCompatActivity {
         FloatingActionButton minus4 = findViewById(R.id.minus4);
         FloatingActionButton minus5 = findViewById(R.id.minus5);
 
-        final TextView addvalue7 = findViewById(R.id.addvalue7);
-        final TextView addvalue8 = findViewById(R.id.addvalue8);
+        addvalue7 = findViewById(R.id.addvalue7);
+        addvalue8 = findViewById(R.id.addvalue8);
 
         addinv = findViewById(R.id.addinv);
         zoom2 = findViewById(R.id.zoom2);
@@ -36,6 +37,7 @@ public class Invitation extends AppCompatActivity {
         addinv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+            if((count7>0)|| (count8>0)){
                 Intent browseIntent = new Intent(getApplicationContext(), BrowsePics.class);
                 if (count7 > 0) {
                     order.add(new Order("Invitation Frame 1", count7, 10.0));
@@ -46,6 +48,7 @@ public class Invitation extends AppCompatActivity {
 
                 browseIntent.putParcelableArrayListExtra("order", order);
                 startActivity(browseIntent);
+            }
             }
         });
         zoom2.setOnClickListener(new View.OnClickListener() {
