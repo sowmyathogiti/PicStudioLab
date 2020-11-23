@@ -69,7 +69,7 @@ public class HomeFragment extends Fragment {
                     if(documentSnapshot.exists()){
                         Log.d("exist", "DocumentSnapshot data: " + documentSnapshot.getData());
 
-                        initialmsg.setText("Hello "+(CharSequence) documentSnapshot.get("Name")+" welcome home");
+                        initialmsg.setText("Hello "+(CharSequence) documentSnapshot.get("Name")+"! Welcome home");
                     }
                     else{
                         Log.d("not exist", "DocumentSnapshot data: " + documentSnapshot.getData());
