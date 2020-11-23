@@ -54,9 +54,9 @@ public class Payment extends AppCompatActivity {
         Take.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Take.setText("OFF");
+                Take.setText("Take Away");
                 if(Take.getText() == "OFF"){
-                    Take.setText("ON");
+                    Take.setText("Take Away");
                 }
             }
         });
@@ -64,9 +64,9 @@ public class Payment extends AppCompatActivity {
         delivery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                delivery.setText("OFF");
+                delivery.setText("Cash on deliver");
                 if(delivery.getText() == "OFF"){
-                    delivery.setText("ON");
+                    delivery.setText("Cash on delivery");
                 }
             }
         });
@@ -102,7 +102,7 @@ public class Payment extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
-                                Toast.makeText(getApplicationContext(),"Added the order to Database",Toast.LENGTH_SHORT).show();
+
                                 docId = documentReference.getId();
 
                                 Intent done = new Intent(getApplicationContext(), PlacedOrder.class);
@@ -111,7 +111,15 @@ public class Payment extends AppCompatActivity {
                                 done.putExtra("totalPrice",totalPrice);
                                 done.putExtra("dateValue",dateValue.getText().toString());
                                 done.putExtra("timeValue",timeValue.getText().toString());
-                                startActivity(done);
+                                if(!(customerValue.getText().toString().length()==0)
+                                        &&(!(docId.length()==0)&&(!totalPrice.equals(0)))
+                                        &&(!(dateValue.getText().toString().length()==0))
+                                    &&(!(timeValue.getText().toString().length()==0))
+                                    &&(agree.isChecked())
+                                    &&(Take.isChecked()||delivery.isChecked())) {
+                                    startActivity(done);
+                                    Toast.makeText(getApplicationContext(),"Added the order to Database",Toast.LENGTH_SHORT).show();
+                                }
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {

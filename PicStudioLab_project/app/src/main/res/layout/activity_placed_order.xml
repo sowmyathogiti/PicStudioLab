@@ -8,31 +8,31 @@
 
     <TextView
         android:id="@+id/placedPrice"
-        android:layout_width="393dp"
-        android:layout_height="212dp"
+        android:layout_width="368dp"
+        android:layout_height="213dp"
         android:hint="XYZ you order has been placed with order Id: xxxxxxx with the total price: $$ . Your order will be ready by mm/dd/yyyy hh:mm"
         android:text="hello"
         android:textColor="#F44336"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
+        app:layout_constraintVertical_bias="0.465" />
 
     <TextView
         android:id="@+id/hurray"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hurray!!"
+        android:layout_width="185dp"
+        android:layout_height="34dp"
+        android:text="Congratulations!!"
         android:textColor="#F44336"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.226" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

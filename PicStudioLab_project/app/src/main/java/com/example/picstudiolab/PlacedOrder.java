@@ -23,10 +23,10 @@ public class PlacedOrder extends AppCompatActivity {
 
         Log.d("place order",i.getStringExtra("name"));
 
-        placed.setText(i.getStringExtra("name")+" you order has been placed with order Id: "
-                +i.getStringExtra("docId")+ "with the total price: "+
-                i.getDoubleExtra("totalPrice",0) + ".\n"+
-                "Your order will be ready by "+i.getStringExtra("dateValue")+" "+
+        placed.setText(i.getStringExtra("name")+", your order has been placed with order Id: "
+                +i.getStringExtra("docId")+ "\nTotal price: "+
+                i.getDoubleExtra("totalPrice",0) +
+                "\nYour order will be ready by "+i.getStringExtra("dateValue")+" "+
                 i.getStringExtra("timeValue"));
     }
 }

@@ -15,10 +15,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 try {
                     if (validations()) {
 
@@ -54,8 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
                                 if (task.isSuccessful()) {
                                     if (mAuth.getCurrentUser().isEmailVerified()) {
-                                        Toast.makeText(getApplicationContext(), "user: "+mAuth.getCurrentUser().getUid(), Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "user: "+mAuth.getCurrentUser().getEmail()+" logged in successfully", Toast.LENGTH_SHORT).show();
                                         Log.d("auth","user: "+mAuth.getCurrentUser().getUid());
+
                                         startActivity(new Intent(getApplicationContext(), Home.class));
                                     } else {
                                         Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
