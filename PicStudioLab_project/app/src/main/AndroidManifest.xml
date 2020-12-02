@@ -22,9 +22,11 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/map_key" />
+            android:value="AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo" />
 
-        <activity android:name=".Map" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"/>
         <activity android:name=".Wedding" />
         <activity
             android:name=".Home"
