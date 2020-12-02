@@ -74,9 +74,12 @@ Password: Welcome@123
 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/profile7.png" width="250" height="400">
 
-- After the user signing up, the user can see a page where it have three tabs home , services and profile if the user open home page he/she can see a welcome message  and the user can aslo see opening timings. 
+- After the user signing up, the user can see a page where it have three tabs home , services and profile if the user open home page he/she can see a welcome message  and the user can also see opening timings and locate us button. 
 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/home.png" width="250" height="400">
+
+<img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/map.png" width="250" height="400">
+
 
 - In services page user can services that the  picstudio lab offering 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/services.png" width="250" height="400">
