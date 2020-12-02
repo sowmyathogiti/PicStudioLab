@@ -30,30 +30,39 @@ public class ResetPassword extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               backScreen();
+                backScreen();
             }
         });
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                resetScreen();
-                mAuth.sendPasswordResetEmail(mailvalue.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-
-                        if(task.isSuccessful()){
-                            Toast.makeText(ResetPassword.this,"Password reset link is sent to the given Email Id",Toast.LENGTH_SHORT);
-                        }
-                        else{
-                            Toast.makeText(ResetPassword.this,task.getException().getMessage(),Toast.LENGTH_SHORT);
-                        }
+                try {
+                    if((mailvalue.getText().toString().length()) == 0) {
+                        mailvalue.setError("Please enter registered email id");
                     }
-                });
+                    else{
+                        resetScreen();
+                    }
+
+                    mAuth.sendPasswordResetEmail(mailvalue.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                            if (task.isSuccessful()) {
+                                Toast.makeText(ResetPassword.this, "Password reset link is sent to the given Email Id", Toast.LENGTH_SHORT);
+                            } else {
+                                Toast.makeText(ResetPassword.this, task.getException().getMessage(), Toast.LENGTH_SHORT);
+                            }
+                        }
+                    });
+                }
+                 catch(Exception exception){}
             }
         });
     }
 
     private void resetScreen() {
+
         Intent resetIntent = new Intent(this, SentReset.class);
         resetIntent.putExtra("mailvalue",mailvalue.getText().toString());
         startActivity(resetIntent);
