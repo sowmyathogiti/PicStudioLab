@@ -78,6 +78,8 @@ Password: Welcome@123
 
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/home.png" width="250" height="400">
 
+- By clicking on locate us button, it shows the locations of PicStudio Lab stores.
+
 <img src="https://github.com/sowmyathogiti/PicStudioLab/blob/master/image/map.png" width="250" height="400">
 
 
