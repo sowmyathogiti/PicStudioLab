@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.picstudiolab.BrowsePics;
 import com.example.picstudiolab.Map;
+import com.example.picstudiolab.MapsActivity;
 import com.example.picstudiolab.R;
 import com.example.picstudiolab.Wedding;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,7 +28,6 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class HomeFragment extends Fragment {
-
 
     FirebaseAuth mAuth1; //= FirebaseAuth.getInstance();
     FirebaseFirestore db1;
@@ -59,6 +59,8 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+
         DocumentReference documentReference = db1.collection("customers").document(mAuth1.getCurrentUser().getUid());
         documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -66,6 +68,7 @@ public class HomeFragment extends Fragment {
 
                 if(task.isSuccessful()){
                     DocumentSnapshot documentSnapshot = task.getResult();
+
                     if(documentSnapshot.exists()){
                         Log.d("exist", "DocumentSnapshot data: " + documentSnapshot.getData());
 
@@ -79,7 +82,16 @@ public class HomeFragment extends Fragment {
                     Log.d("data", "DocumentSnapshot data: " + task.getException());
                 }
             }
+
         });
+
+        root.findViewById(R.id.locateus).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(requireActivity(), MapsActivity.class));
+            }
+        });
+
         return root;
     }
 }
